@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Draggable and Resizable</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <style type="text/css">
+            #square{
+                width: 200px;
+                height: 200px;
+                background-color: green;                
+            }
+            #resizable{
+                width: 200px;
+                height: 200px;
+                background-color: red;                
+            }   
+        </style>
+    </head>
+    <body>
+        <div id="square">Drag Me Around!</div>
+        <div id="resizable">Resize Me!</div>
+        
+        <script>
+            $("#square").draggable();            
+            $("#resizable").resizable();
+        </script>
+    </body>
+</html>
